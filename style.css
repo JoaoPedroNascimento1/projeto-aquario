@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: #ECF0F1;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    
+}
+
+.nav img {
+    width: 200px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: #142F66;
+    margin-right: 30px;
+}
+
+.link a:hover{
+    color: #4b76cd;
+}
+
+.home {
+    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2023/07/promocao-aquario-de-sao-paulo-capa-04.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.text-home {
+    padding-left: 10%;
+    margin-bottom: 80px;
+    
+}
+
+.text-home h1 {
+    color: white;
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+
+
+.text-home button {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: 30px;
+    color: white;
+    background-color:#0f244e ;
+    width: 400px;
+    transition: 0.5s;
+}
+
+.text-home button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sobre {
+  display: flex; 
+  flex-direction: row; 
+  padding: 10% ;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
+.text-sobre {
+    max-width: 50%;
+    margin-right: 40px;
+}
+
+.text-sobre h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text-sobre p {
+    line-height: 25px;
+} 
+
+.foto-sobre {
+    background-image: url(https://passaportedigital.com/wp-content/uploads/2021/05/aquario-de-sao-paulo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.contato h2 {
+    margin-bottom: 10px;
+    color: #0f244e;
+}
+
+.container {
+    text-align: center;
+    border: 5px solid #0f244e;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 10px;
+    background-color: #ECF0F1;
+    
+}
+
+.list-contato {
+    list-style: none;
+    text-align: left;
+    box-shadow: 20px;
+    line-height: 40px;
+}
+
+.list-contato p {
+    font-size: 24px;
+}
+
+.list-contato a{
+    text-decoration: none;
+    color: #142F66;
+    font-size: 24px;
+}
+
+.list-contato a:hover {
+    text-decoration: underline;
+    color: #4b76cd;
+}
+
+.footer {
+    background-color: #0f244e;
+    color: white;
+    padding: 50px 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    margin-left: 8px;
+}
+
+@media(max-width:700px) {
+    
+    .nav img{
+        width: 150px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .text-home h1{
+        font-size: 45px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 75px 0 0 0;
+        margin-left: 10%;
+    }
+
+    .sobre div {
+        max-width: 80%;
+    }
+
+    .sobre h2{
+        font-size: 45px;
+    }
+
+    .foto-sobre {
+        width: 400px;
+        height: 400px;
+        margin-right: 10%;
+    }
+
+    .p {
+        margin-bottom: 30px;
+    }
+
+   
+    
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        font-size: 22px;
+        margin-bottom: 8px ;
+    }
+
+    footer p {
+        margin: 0;
+    }
+}
+
+@media(max-width:620px){
+    .nav img{
+        width: 100px;
+        height: 35px;
+        margin-left: 8px;
+        margin-bottom: 7px;
+    }
+
+    .link a {
+        margin-right: 20px;
+    }
+}
